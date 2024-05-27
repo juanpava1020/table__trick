@@ -1,0 +1,90 @@
+{
+    "reserva": [
+      {
+        "id": 1,
+        "nombre": "Andres Pastrana",
+        "fecha": "2024-05-06",
+        "estado": "Activa"
+      },
+      {
+        "id": 2,
+        "nombre": "Juan Perez",
+        "fecha": "2024-05-07",
+        "estado": "Activa"
+      },
+      {
+        "id": 3,
+        "nombre": "Maria Garcia",
+        "fecha": "2024-05-08",
+        "estado": "Activa"
+      },
+      {
+        "id": 4,
+        "nombre": "Andres Pastrana",
+        "fecha": "2024-05-09",
+        "estado": "Activa"
+      },
+      {
+        "id": 5,
+        "nombre": "Pedro Lopez",
+        "fecha": "2024-05-10",
+        "estado": "Activa"
+      },
+      {
+        "id": 6,
+        "nombre": "Luis Ramirez",
+        "fecha": "2024-05-11",
+        "estado": "Activa"
+      },
+      {
+        "id": 7,
+        "nombre": "Andres pastrana",
+        "fecha": "2024-05-12",
+        "estado": "Activa"
+      },
+      {
+        "id": 8,
+        "nombre": "Ana Martinez",
+        "fecha": "2024-05-13",
+        "estado": "Activa"
+      },
+      {
+        "id": 9,
+        "nombre": "Carlos Soto",
+        "fecha": "2024-05-14",
+        "estado": "Activa"
+      },
+      {
+        "id": 10,
+        "nombre": "Andres pastrana",
+        "fecha": "2024-05-15",
+        "estado": "Activa"
+      },
+      {
+        "id": 11,
+        "nombre": "Laura Herrera",
+        "fecha": "2024-05-16",
+        "estado": "Activa"
+      },
+      {
+        "id": 12,
+        "nombre": "Daniel Gutierrez",
+        "fecha": "2024-05-17",
+        "estado": "Activa"
+      },
+      {
+        "id": 13,
+        "nombre": "Andres pastrana",
+        "fecha": "2024-05-18",
+        "estado": "Activa"
+      }, 
+      {
+        "id": 14,
+        "nombre": "Byron Otalvaro",
+        "fecha": "2024-05-18",
+        "estado": "Activa"
+      }
+
+    ]
+  }
+  

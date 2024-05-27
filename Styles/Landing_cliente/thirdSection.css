@@ -1,0 +1,89 @@
+.thirdSection {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.descriptionSection,
+.title-virtualTour,
+.allusiveImage,
+.descriptionTextVirtualTour,
+.imageVirtual,
+.buttonVirtualSpaces {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.descriptionSection span {
+    padding-top: 3.2rem;
+    font-size: clamp(0.5rem, 0.224vw + 0.357rem, 0.625rem);
+}
+
+.title-virtualTour h2 {
+    padding: .4rem 2rem 2rem 2rem;
+    font-size: clamp(0.938rem, 1.678vw - 0.138rem, 1.875rem);
+}
+
+.allusiveImage img {
+    width: 10rem;
+    padding-bottom: 3rem;
+}
+
+.descriptionTextVirtualTour span {
+    width: 60%;
+    font-size: clamp(0.625rem, 0.783vw + 0.123rem, 1.063rem);
+    text-align: center;
+}
+
+.buttonVirtualSpaces a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 1.2rem;
+    border-radius: 3rem;
+    border: 0.063rem solid var(--primary-color);
+    margin: 3rem;
+}
+
+.imageVirtual img {
+    width: clamp(16rem, 105.593vw - 51.711rem, 75rem);
+    height: clamp(15rem, 40.268vw - 10.822rem, 37.5rem);
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.figureLocal img{
+    position: absolute;
+    height: clamp(18.75rem, 33.557vw - 2.768rem, 37.5rem);
+    width: clamp(18.75rem, 33.557vw - 2.768rem, 37.5rem);
+    left: 0;
+    z-index: -10;
+    padding-top: 2rem;
+}
+
+
+@media screen and (max-width: 770px) {
+    .thirdSection {
+        justify-content: space-between;
+    }
+
+    .imageVirtual img {
+        border-radius: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .descriptionTextVirtualTour span{
+        width: 14rem;
+    }
+
+    /* .imageVirtual img {
+        width: 16rem;
+        height: 15rem;
+    } */
+}

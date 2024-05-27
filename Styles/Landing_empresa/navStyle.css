@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,420;1,420&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    --theme-color: white;
+    --primary-color: #181E4B;
+    --secundary-color: #DF6951;
+    --text-color-inverse: white;
+    --text-color: black;
+    --navbar-shallow-color: #e5e5e5;
+    --menu-mobile-background-color: #3A4460;
+    --font-logo-TableTrick: "Chivo", sans-serif;
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--theme-color);
+    color: var(--text-color);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--text-color);
+  }
+
+
+.topheader {
+    box-shadow: 0 4px 5px var(--navbar-shallow-color);
+    position: fixed;
+    background-color: var(--theme-color);
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 500;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.625rem;
+    max-width: 97.5rem;
+    margin: 0 auto;
+    align-items: center;
+    height: 4.375rem;
+  }
+  
+  /* Logo */
+.topnav p{
+    font-family: var(--font-logo-TableTrick);
+    font-style: italic;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+
+  /* Menu */
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    padding: 0 15px;
+  }
+  
+  .menu a {
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 50px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  
+  .menu a::after {
+    content: "";
+    background-color: var(--secundary-color);
+    position: absolute;
+    left: 0;
+    top: calc(100% + 4px);
+    width: 100%;
+    height: 4px;
+  
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .menu a.selected::after,
+  .menu a:hover::after {
+    opacity: 0.8;
+  }
+  
+  .menu a:hover {
+    color: var(--primary-color);
+  }
+  
+  .open-menu,
+  .close-menu {
+    display: none;
+  }
+  
+  .logotype {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  @media (max-width: 950px) {
+    /* Menu */
+    .menu {
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      align-items: center;
+      background-color: var(--menu-mobile-background-color);
+      height: 100%;
+      overflow-y: auto;
+  
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+    }
+  
+    .menu li {
+      padding: 0;
+    }
+  
+    .menu a {
+      color: var(--text-color-inverse);
+      line-height: 3.75rem;
+    }
+
+    .menu a:hover {
+        color: var(--text-color);
+      }
+  
+    .open-menu,
+    .close-menu {
+      display: block;
+      border: none;
+      background: none;
+      cursor: pointer;
+    }
+  
+    .close-menu {
+      align-self: flex-end;
+      padding: 1.25rem 0.9375rem;
+    }
+  
+    .menu_opened {
+      opacity: 1;
+      pointer-events: all;
+    }
+  
+    .open-menu:focus:not(:focus-visible),
+    .close-menu:focus:not(:focus-visible) {
+      outline: none;
+    }
+  }

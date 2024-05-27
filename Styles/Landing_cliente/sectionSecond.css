@@ -1,0 +1,146 @@
+.sectionSecond {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-top: 7rem;
+}
+    
+.sectionSecondTitle {
+    width: 100%;
+}
+
+.sectionSecondTitle h2 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1.25rem, 2.237vw - 0.185rem, 2.5rem);
+}
+
+.clientCharacteristics {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 8rem;
+}
+
+.main-features {
+    height: 15rem;
+    width: clamp(12.5rem, 22.371vw - 1.846rem, 25rem);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-features .icon {
+    position: relative;
+}
+
+.main-features .figure {
+    position: absolute;
+    right: -0.1rem;
+    top: .6rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #D3F985;
+    border-radius: 50%;
+    padding: clamp(0.125rem, 0.224vw - 0.018rem, 0.25rem);
+    z-index: -6;
+}
+
+.main-features .figure2 {
+    position: absolute;
+    right: -0.4rem;
+    top: .6rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #A6E8F6;
+    border-radius: 50%;
+    padding: clamp(0.125rem, 0.224vw - 0.018rem, 0.25rem);
+    z-index: -6;
+}
+
+.main-features .figure3 {
+    position: absolute;
+    right: -0.4rem;
+    top: .6rem;
+    height: 1.8rem;
+    width: 1.8rem;
+    background-color: #FCBEDC;
+    border-radius: 50%;
+    padding: clamp(0.125rem, 0.224vw - 0.018rem, 0.25rem);
+    z-index: -6;
+}
+
+
+.main-features h3, .main-features span {
+    margin: clamp(0.313rem, 0.559vw - 0.046rem, 0.625rem);
+}
+
+
+.main-features span {
+    text-align: center;
+    font-size: clamp(0.688rem, 0.671vw + 0.257rem, 1.063rem);
+}
+
+.companies-section-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.companies-section-title span {
+    font-weight: bold;
+    font-size: clamp(0.563rem, 0.559vw + 0.204rem, 0.875rem);
+}
+
+.companies-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.company-section img {
+    width: 8rem;
+    height: 8rem;
+}
+
+@media screen and (max-width: 770px) {
+    .sectionSecond{
+        height: 100vh;
+        padding: 0;     
+    }
+
+    .sectionSecondTitle {
+        padding-top: 3rem;
+    }
+
+    .clientCharacteristics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-features {
+        margin: 0;
+        height: 12rem;
+    }
+
+    .companies-section {
+        padding: 0 4rem;
+    }
+
+    .company-section img {
+        width: 3rem;
+        height: 3rem;
+    }
+}
+
+
+
+
